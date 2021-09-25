@@ -173,3 +173,6 @@ def existe_contacto(nombre):
     return os.path.isfile(CARPETA + nombre + EXTENSION)
 
 app()
+
+
+#Mas lineas de comando
