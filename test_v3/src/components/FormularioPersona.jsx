@@ -10,7 +10,9 @@ const FormularioPersona = (props) => {
     }, [props.persona]);
 
     return (
+        
         <form
+        //condicional de si agrego o no
             onSubmit={(e) => {
                 if (modoAgregar) {
                     handleSubmit(persona);
@@ -20,7 +22,8 @@ const FormularioPersona = (props) => {
                 }
                 e.preventDefault();
             }}
-        >
+        > 
+        {/* Agarro el valor de la persona  para editar */}
             <label htmlFor="nombre">Nombre:</label>
             <input
                 name="nombre"
@@ -40,10 +43,12 @@ const FormularioPersona = (props) => {
                 onChange={(e) => setPersona({ ...persona, edad: +e.target.value })}
                 type="number"
             />
+            {/* agego botones para cancelar y agregar */}
             <button type="submit">{modoAgregar ? "Agregar" : "Editar"}</button>
             {!modoAgregar && <button onClick={onCancelar}>Cancelar</button>}
 
         </form>
+
     );
 };
 
