@@ -10,7 +10,7 @@ class Propiedades extends Component {
         <>
             
         <h1>Ella se llama {this.props.Nombre}</h1>
-        <div><h2>esta es una lista {this.props.lista}</h2></div>    
+            
         
             
         </>
