@@ -2,6 +2,9 @@
 
 // for
 /*
+for(expresionInicial; expresionCondicional; exprecionDeActualizacion){
+
+}
 for (let index = 0; index < array.length; index++) {
     const element = array[index];
     
@@ -14,7 +17,8 @@ for (let i = 1; i <= 5; i++) {
 }
 
 //for in
-//solo sirve para itirerar dentro de objetos
+//imprime una vez cada una de las clave cada vez que cumple un ciclo.
+//solo sirve para itirerar dentro de "objetos"
 /*
 for (const key in object) {
     if (Object.prototype.hasOwnProperty.call(object, key)) {
@@ -35,6 +39,7 @@ for (let clave in persona) {
 
 //For of
 //ayuda a obtener datos interno de esa conexion
+//solo de puede recorrer objetos iterables "Cadenas de caracteres"
 /*
 for (const iterator of object) {
     

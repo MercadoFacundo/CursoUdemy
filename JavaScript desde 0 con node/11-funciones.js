@@ -4,6 +4,7 @@ function nobreFuncion(params:type) {
     ---------Cuerpo de la funcion
 }
 */
+//FUNCIONES DECLARATIVAS -------------------------------------------------------------------------------------------
 
 function saludar() {
     console.log('Hola soy Facundo');
@@ -24,7 +25,7 @@ var saluda = saludar('Facundo');
 console.log(saluda);
 console.log(saludar('hernesto jorge'));
 
-//FUNCIONES DE EXPRESION
+//FUNCIONES DE EXPRESION--------------------------------------------------------------------------------------------------
 //funcion anonima
 var suma = function(a, b) {
     return a + b;
@@ -32,7 +33,9 @@ var suma = function(a, b) {
 
 console.log(suma(2, 2));
 
-/*FUNCIONES FLECHA - ARROW FUNCTION
+/*FUNCIONES FLECHA - ARROW FUNCTION--------------------------------------------------------------------------------
+
+SON ALTERNATIVAS PARA COMPACTAR A UNA EXPRESION DE FUNCION PERO SON MAS LIMITADAS
 var restar = async (params:type) => {
     
 }
