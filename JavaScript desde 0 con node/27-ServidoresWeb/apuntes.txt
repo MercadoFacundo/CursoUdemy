@@ -1,0 +1,26 @@
+1- npm init -y (es para decirle si a todo)
+
+Se puede modificar el archivo package.js si se desea modificar
+
+2-express.js para generar estos servidores web
+npm i express (instalacion. "i" es la abreviatura de install)
+
+3-node moon para tener nuestro codigo activo y no estar reiniciando constantements
+Esta es una dependencia de desarrollo, esta no va a estar implementada en si en el desarrollo.
+npm i -D nodemon (-D e decimos que es una dependencia de desarrollo)
+
+4-para no estar reiniciando el servidor cada vez que hacemos un cambio vamos a usar nodemoon
+para ello en package.json vamos a hacer una modificacion en el script. acontinuacion se muestra como
+se ve originalmente.
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+ahora como quedaria con la modificacion
+"scripts": {
+    "dev":"nodemon index.js"
+  },
+gracias a esto, cuando se quiera iniciar el servidor usamos
+
+npm run dev
+
+El cual va a iniciar el proyecto con nodemon

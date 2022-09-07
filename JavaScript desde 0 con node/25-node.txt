@@ -1,0 +1,46 @@
+//Node js
+/*Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, 
+para la capa del servidor basado en el lenguaje de programación JavaScript, asíncrono, 
+con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google
+
+NPM: es node pacage manager que es el gestor de los paquetes de node
+nos ayuda a gestionar como generar proyectos con esta herramienta.
+
+package.json: Es un manifiesto de las intenciones publicas o motivos que tienen nuestro programa.
+En este archivo se va a encontrar todo los datos necesarios acerca de nuestro software. (descripcion, 
+version, que repertorios usa, repositorio en github, autor, entre otras) esta escrito en json.
+En esta carpeta se guardan las dependecias.
+
+json: (javascript object notation) es un formato ligero de intercambio de datos.
+
+Carpeta node module: va a contener el paquete, de que paquete estamos utilizando-
+
+Arquitectura cliente servidor.
+Servidor: presta servicios a otras computadoras
+Cliente: es lacomputadora que recibe el servicios
+
+Metodos de solicitud HTTP
+GET: El servidor envia datos al cliente
+POST: ayuda a generar un nuevo cambio en el servidorr 
+PUT: modificar el estado del recurso de nuestro servidor 
+DELETE: nos ayuda a eliminar el estado del recurso de nuestro servidor.
+
+Codigo de estado de la respuesta
+HTTP
+1xx - Tipo informativo
+2xx - Respuesta de exito 
+3xx - Redireccion
+4xx - Error del cliente
+5xx - Error del servidor 
+
+CRUD - MongoDB
+Create:
+Read:
+Update:
+Delete:
+
+
+1- npm init : Sirve para crear un nuevo proyecto
+2- el archivo inicial se llama index.js, app.js, main.js. Crearlo
+3- Instalar dependencias en este caso axios (npm install axios)
+4- En el package.json se guardan las dependencias instaladas
