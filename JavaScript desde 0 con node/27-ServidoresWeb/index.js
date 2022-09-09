@@ -20,6 +20,27 @@ app.get('/', (req, res) => {
     })
 })
 
+//Vamos a trabajar en las rutas,podemos pedir parametros para enviar respuestas
+//Esos parametros van a actuar como variables
+app.get('/:id', (req, res) => {
+    let {params : {id}} = req
+    let user = Service.getUsers(id)
+
+    res.json({
+        message: `Usuario ${id}`,
+        body: user//traemos al usuario gracias al id
+    })
+})
+
+//construir un enpoint modificacion
+app.put('/:id', (req, res) => {
+   //Respuesta
+})
+//Borrar
+app.delete('/:id', (req, res) => {
+   //Respuesta
+})
+
 app.post('/', (req, res) => {
     //al body le vamos a dar el nombre de newuser
     let {body: newUser} = req;
