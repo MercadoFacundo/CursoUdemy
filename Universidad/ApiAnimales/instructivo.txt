@@ -1,0 +1,10 @@
+/para que corra el servidor se usa node "server.js"
+//npm i nodemoon --save-dev para que se actualice solo
+//despues de cambiar el script e instalar nodemon para iniciar usamos npm run start
+Instalamos npm i mysql express-myconnection(Metodos y funciones para hacer consultas
+a nuestra base mysql)
+
+instalamos npm i cors
+se usa para, nos permite hacer las consultas de nuestro cliente react al servidor, una preconsulta
+para ver si el servidor esta dispuesto a hacer las consultas desde
+nuestro cliente

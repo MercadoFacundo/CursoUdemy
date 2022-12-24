@@ -1,0 +1,22 @@
+Carpeta controllers
+
+modelos
+	si es modelo de base de dato es mongodb
+	
+	si es modelo son las tablas de los esquemas de
+	cada coleccion, peliculas, usuarios, generos etc
+
+Muestra el esquema de cada documento de la base de datos.
+en models estan todos los modelos de cada coleccion para
+definir que dato tiene que collecion
+
+rutas
+cada coleccion tiene su crud, alta baja modificacion y mostrar
+desde el front se maneja con axios y se envia a los routes del backend
+para pegar en cada coleccion y controlador con sus funciones
+ api/movie
+ api/genre
+ api/schedule etc
+ 
+ 
+
