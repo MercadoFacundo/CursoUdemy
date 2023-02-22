@@ -1,3 +1,4 @@
+
 //OPERADOR DE CONCATENAR (+) solo con cadenas de texto
 
 var nombre = 'Facu'

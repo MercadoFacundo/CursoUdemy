@@ -24,6 +24,7 @@ console.log(cliente);
 console.log(filter);
 
 //FINDINDEX
+//Nos va a retornar la posicion del elemento del array
 
 var clientes = [
     {id: 1, nombre: 'Ada'},
@@ -34,5 +35,5 @@ var clientes = [
     {id: 1, nombre: 'Ada'}
 ]
 var posicion = clientes.findIndex((cliente) => cliente.id === 2)
-console.log(posicion);
+console.log('La posicion del cliente 2 es: ',posicion);
 console.log(clientes[posicion]);

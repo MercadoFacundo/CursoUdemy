@@ -13,6 +13,7 @@ for (let index = 0; index < array.length; index++) {
 
 for (let i = 1; i <= 5; i++) {
     console.log('Hola mundo!!');
+    console.log(i);
     
 }
 
@@ -34,6 +35,7 @@ var persona = {
 }
 
 for (let clave in persona) {
+    console.log(clave, persona.nombre);
     console.log(clave, persona[clave]);
 }
 

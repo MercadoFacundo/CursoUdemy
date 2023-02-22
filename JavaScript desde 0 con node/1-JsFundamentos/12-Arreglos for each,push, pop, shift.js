@@ -12,7 +12,9 @@ for (let i = 0; i < letras.length; i++) {
 
 //funcion----------------------------------------------------------------------------------------------
 //nos permite recorrer los elemento de los arreglos
+var letras = ['a', 'b', 'c', 'd', 'e'];
 letras.forEach((elemento) => {
+    elemento === 'c' ? console.log(elemento) : 'No existe'
     console.log(elemento);
 })
 //Si se lo quiere comprimir mas
@@ -36,6 +38,15 @@ console.log(letras);
 var ultimoElemento = letras.pop();
 console.log(ultimoElemento);
 console.log(letras);
+//slice podemos agregar otro elemento replazando el indicado--------------------
+var letras = ['a', 'b', 'c', 'd', 'e'];
+letras.splice(1,1,'x')
+console.log(letras);
+//slice podemos eliminar un elemento replazando el indicado--------------------
+var letras = ['a', 'b', 'c', 'd', 'e'];
+letras.splice(0,1)
+console.log(letras);
+
 
 console.log('=======================================================');
 
