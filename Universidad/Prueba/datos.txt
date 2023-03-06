@@ -1,0 +1,11 @@
+npm init -y (para darle yes a todas las preguntas)
+npm install nodemon -D (para instalar nodemon)
+debemos colocar 
+"dev": "nodemon index.js",
+    "start": "node index.js",
+
+en el script de package.json
+
+npm run dev(iniciamos el servidor)
+
+sudo npm install express (instalamos express)

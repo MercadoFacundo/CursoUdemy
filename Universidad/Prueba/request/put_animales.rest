@@ -1,0 +1,6 @@
+PUT http://localhost:3001/api/animales/1
+Content-Type: application/json
+
+{
+    "nombre": "elefante"
+}

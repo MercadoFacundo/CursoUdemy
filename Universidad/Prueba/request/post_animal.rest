@@ -1,0 +1,6 @@
+POST http://localhost:3001/api/animales
+Content-Type: application/json
+
+{
+    "nombre": "gato"
+}

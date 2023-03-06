@@ -7,7 +7,7 @@ export const Ejercicio_2 = () => {
 
 
 
-    const handleAgregar = () => {
+    const handlerAgregar = () => {
         console.log('clg1', animal);
         console.log('clg2', valor);
         setAnimal([...animal, valor])
@@ -47,9 +47,6 @@ return (
                 )
             }
             ) 
-
-            
-            
         }
 
     </div>
