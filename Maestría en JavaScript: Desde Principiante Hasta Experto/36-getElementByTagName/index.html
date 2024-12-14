@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo al Dom</title>
+</head>
+<body>
+    
+    
+    <p id="parrafo">parrafo almacenado en el dom 1</p>
+    <p id="parrafo">parrafo almacenado en el dom 2</p>
+    <p id="parrafo">parrafo almacenado en el dom 3</p>
+    <script>
+/*Nos permite seleccionar los elementos mediante la etiqueta*/
+        let parrafos = document.getElementsByTagName('p');
+//vamos a ver cuantas etiquetas esta seleccionando
+        console.log(parrafos.length);
+        console.log('Hola mundo');
+
+        for(let i=0 ; i < parrafos.length; i++){
+            console.log(parrafos[i].innerHTML);
+        }
+
+    </script>
+</body>
+</html>

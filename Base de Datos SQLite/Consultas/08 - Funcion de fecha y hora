@@ -1,0 +1,10 @@
+/*Funciones de fecha y hora
+date
+time
+datetime
+strftime
+*/
+SELECT date() --Devuelve la fecha
+SELECT time()--Devuelve la hora
+SELECT datetime() --Devuelve la fecha y hora
+SELECT strftime('%d',date()) -- me devuelve solo el dia. %m para mes y %Y ano

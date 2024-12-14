@@ -1,0 +1,6 @@
+/*eliminar registros
+DELETE FROM tabla
+WHERE condicion
+*/
+
+DELETE FROM tb_categorias where codigo_ca = 3;

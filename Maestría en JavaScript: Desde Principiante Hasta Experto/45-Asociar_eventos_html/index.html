@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento OneClick
+-->
+    <h1 id="titulo" >Manejo del dom con js</h1>
+
+    <br>
+<!--si colocamos el id de mostrar en la funcion, dentro del getElementById
+se agregara el nuevo titulo en el div-->
+    <div id="mostrar"></div>
+
+
+    <script>
+//seleccionamos el elemento id titulo, y lo asociamos con la funcion
+//cambiarTexto
+        document.getElementById("titulo").onclick = cambiarTexto
+//creamos la funcion iterando el titulo
+        function cambiarTexto(titulo){
+//dentro de la funcion, iteramos titulo y agregamos el innerHTML
+// para impactar el nuevo titulo
+            document.getElementById("mostrar").innerHTML="nuevo titulo"
+        }
+
+
+    </script>
+</body>
+</html>

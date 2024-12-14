@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario js</title>
+</head>
+<body>
+<!--Cambiaremos el nombre del titulo por otro contenido a travez de un 
+boton-->
+    <h1 id="titulo">Manejo del dom con js</h1>
+<!--El boton tendra el evento on ckick que responde al hacer click-->
+    <button onclick="mostrar()">mostrar</button>
+
+
+
+    <script>
+//Esta funcion insertara el nombre mediante ID al titulo
+        function mostrar(){
+            document.getElementById("titulo").innerHTML = "nuevo titulo"
+        }
+
+
+
+    </script>
+</body>
+</html>

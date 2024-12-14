@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myfunction()">
+<!--Evento OnLoad
+-->
+    <h1 id="titulo" >Manejo del dom con js</h1>
+
+    <br>
+
+    <div id="mostrar"></div>
+
+    <script>
+
+//creamos la funcion para el onload
+        function myfunction(){
+//cargamos una alerta para mostrar el oneload
+            alert("Se a cargado el onLoad")
+
+            let texto = ""
+//Se consultara si las cookie estan habilitadas
+            if (navigator.cookieEnabled){
+                texto = "Las cookies estan activadas"
+            }{
+                texto = "Las cookies estan desactivadas"
+            }
+//se cargara el tipo de respuesta dentro de la variable texto
+//que mediante el getElementById se mostrara en el div
+        document.getElementById("mostrar").innerHTML = texto
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento OnMauseDown - Se activa cuando el usuario mantiene el click
+como agarrando el titulo del elemento donde se regista el evento
+Evento onMauseUp - se activa cuando el usuario suelta el click
+del elemento donde se registro el evento
+
+llama a la funcion rojo cuando el maus suelta el elemento y llama la 
+funcion azul cuando el mause agarra o mantiene el click en el elemento-->
+<h1 onmousedown="azul(this)" onmouseup="rojo(this)" >titulo probando el evento onMauseOver</h1>
+
+
+    <script>
+        function rojo(titulo){
+            titulo.style.color="red"
+
+        }
+        function azul(titulo){
+            titulo.style.color="blue"
+        }
+
+    </script>
+</body>
+</html>

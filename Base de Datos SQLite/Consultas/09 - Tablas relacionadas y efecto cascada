@@ -1,0 +1,16 @@
+Select * from Inscripcion I
+INNER JOIN Alumno A on I.ID_alumno = A.ID_alumno
+INNER JOIN Carrera C on I.ID_Carrera = C.ID_Carrera
+
+
+
+Select I.ID_Inscripcion, A.Nombre, A.Apellido, C.Nombre, I.Regularidad  from Inscripcion I
+INNER JOIN Alumno A on I.ID_alumno = A.ID_alumno
+INNER JOIN Carrera C on I.ID_Carrera = C.ID_Carrera
+
+
+/*
+Se agrego la clausula cascade, que funciona cuando una actualiza un campo
+con un cierto valor, esto hace que todos los campos que esten relacionadas
+con otras tablas tambien se actualicen, y asi evitar que existan datos erroneos
+*/

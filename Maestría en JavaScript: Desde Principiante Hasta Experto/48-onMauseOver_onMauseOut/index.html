@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento OnMauseOver - Se activa cuando el usuario mueve el maus sobre
+el elemento donde se regista el evento
+Evento onMauseOut - se activa cuando el usuario mueve el maus fuera del
+elemento donde se registro el evento
+
+llama a la funcion rojo cuando el maus esta encima y llama la funcion
+azul cuando el mause sale de encima-->
+<h1 onmouseout="azul(this)" onmouseover="rojo(this)" >titulo probando el evento onMauseOver</h1>
+
+
+    <script>
+        function rojo(titulo){
+            titulo.style.color="red"
+
+        }
+        function azul(titulo){
+            titulo.style.color="blue"
+        }
+
+    </script>
+</body>
+</html>

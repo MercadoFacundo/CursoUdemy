@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo al Dom</title>
+</head>
+<body>
+    
+    <h1 class="titulo">titulo de la clase 64</h1>
+    <h1 class="titulo">titulo de la clase 65</h1>
+    <p class="rojo">querySelectorAll almacenado en el dom 1</p>
+    <p class="rojo">querySelectorAll almacenado en el dom 2</p>
+    <p class="rojo">querySelectorAll almacenado en el dom 3</p>
+    <script>
+/*Nos permite seleccionar los elementos mediante la etiqueta
+y tambien su clase en este caso*/
+        let claseRojo = document.querySelectorAll('p.rojo');
+//vamos a ver cuantas etiquetas esta seleccionando
+        console.log(claseRojo.length);
+        console.log('Hola mundo');
+
+        for(let i=0 ; i < claseRojo.length; i++){
+            console.log(claseRojo[i].innerHTML);
+        }
+
+    </script>
+</body>
+</html>

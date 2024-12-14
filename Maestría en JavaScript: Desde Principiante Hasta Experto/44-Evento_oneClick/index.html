@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento OneClick
+Cuando dentro de la funcion agregamos el This, le estamos diciento
+que ESTE texto-->
+    <h1 onclick="cambiarTexto(this)">Manejo del dom con js</h1>
+
+    <br>
+
+    
+
+
+    <script>
+//creamos la funcion iterando el titulo
+        function cambiarTexto(titulo){
+//dentro de la funcion, iteramos titulo y agregamos el innerHTML
+// para impactar el nuevo titulo
+            titulo.innerHTML="nuevo titulo"
+        }
+
+
+    </script>
+</body>
+</html>

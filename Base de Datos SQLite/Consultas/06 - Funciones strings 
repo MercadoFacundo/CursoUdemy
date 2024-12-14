@@ -1,0 +1,23 @@
+/*Funciones Strings*/
+
+SELECT rtrim('Hola Mundo SQLite        ') || ' Hola Mundo 2' --Quita los espacios de mas  la derecha
+
+SELECT 'Hola Mundo SQLite' || ltrim('             Hola Mundo 2') --Quita los espacios de mas  la izquierda
+
+SELECT 'Hola Mundo SQLite' || trim('             Hola Mundo 2        ') --Quita los espacios de mas ambos lados
+
+--Pasar a mayuscula 
+
+SELECT upper('Hola Mundo, Hola Mundo');
+
+-- o todo a minuscula
+
+SELECT lower('Hola Mundo, Hola Mundo');
+
+-- Cuantos caracteres tiene el texto con espacios
+
+SELECT length('Hola Mundo, Hola Mundo');
+
+-- Permite extraer caracteres desde la pocision 5, traeme 6 caracteres
+
+SELECT substr('Hola Mundo, Hola Mundo', 5, 6);

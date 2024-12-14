@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario js</title>
+</head>
+<body>
+<!--Cambiaremos la imagen que se muestra por otra, a travez de un 
+boton-->
+    <h1 id="titulo">Manejo del dom con js</h1>
+<!--El boton tendra el evento on ckick que responde al hacer click-->
+    <button onclick="mostrar()">mostrar</button>
+<!--Ingresaremos la imagen-->
+    <img id="imagen" src="1.png">
+
+
+
+    <script>
+//Esta funcion insertara el nombre mediante ID a la imagen
+        function mostrar(){
+            let _imagen = document.getElementById("imagen").src
+              // Extraer solo el nombre del archivo desde el src de la imagen
+              var srcActual = imagen.src.split('/').pop();  // .pop() obtiene el último valor después de la última barra "/"
+            if (srcActual === "2.png") {
+                imagen.src = "1.png";
+            } else {
+                imagen.src = "2.png";
+            }
+
+        }
+
+
+
+    </script>
+</body>
+</html>

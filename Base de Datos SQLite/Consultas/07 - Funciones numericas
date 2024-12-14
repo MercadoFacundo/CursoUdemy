@@ -1,0 +1,12 @@
+-- Funciones numericas
+--Cuenta los codigos que tiene actualmente
+SELECT count(codigo_me) from tb_medidas
+
+--Valor maximo
+SELECT MAX(codigo_me) from tb_medidas
+
+--Valor minimo
+SELECT MIN(codigo_me) from tb_medidas
+
+-- Suma los valores que tienen contenido numerico
+SELECT sum(codigo_me) from tb_medidas

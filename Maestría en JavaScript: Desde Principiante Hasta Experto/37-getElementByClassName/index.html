@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo al Dom</title>
+</head>
+<body>
+    
+    
+    <p class="rojo">elemnto almacenado en el dom 1</p>
+    <p class="rojo">elemnto almacenado en el dom 2</p>
+    <p class="rojo">elemnto almacenado en el dom 3</p>
+    <script>
+/*Nos permite seleccionar los elementos mediante su clase*/
+        let claseRojo = document.getElementsByClassName('rojo');
+//vamos a ver cuantas etiquetas esta seleccionando
+        console.log(claseRojo.length);
+        console.log('Hola mundo');
+
+        for(let i=0 ; i < claseRojo.length; i++){
+            console.log(claseRojo[i].innerHTML);
+        }
+
+    </script>
+</body>
+</html>

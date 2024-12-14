@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con js</title>
+</head>
+<body>
+    <!--Creamos un formulario-->
+    <form id="formulario">
+        <!--usamos los imput para abri cajas donde rellenar con los 
+        valores-->
+        <input type="text" name="nombre" value="Facundo">
+        <br>
+        <input type="text" name="apellido" value="Mercado">
+        <br>
+        
+    </form>
+<!--Creamos un boton con el evento onclick que reaccionara al momento de
+nosotros hacer click en el y esto llamara a la funcion "mostrarValores()"-->
+    <button onclick="mostrarValores()">mostrar</button>
+<!--Este div lo usaremos como almacenamiento de dicho valores-->
+    <div id="valores"></div>
+
+
+    <script>
+//Creamos la funcion
+        function mostrarValores(){
+//creamos una variable para almacenar los datos del formulario a travez
+//de document.forms
+            let formulario = document.forms["formulario"]
+//Creamos una variable texto vacia
+            let texto = ""
+/*a travez de este for recorreremos el formulario usando la variable
+            
+iterame el valor del formulario dentro de la variable elemnento en 
+cada loop*/
+            for(let elemento of formulario){
+                //elemento.value lo usamos para traer los valores de
+                //los imputs del formulario y usamos la variable texto
+                //para almacenarlos
+                texto += elemento.value + '<br/>';
+
+            }
+/*meteremos los datos dentro del div que tiene como ID valores, 
+por eso usamos el getElementById. usaremos el innerHTML para solo
+meter el valor y no todo el div dentro de la variable texto que se
+encuentra vacia y asi mostrarlo*/
+            document.getElementById("valores").innerHTML = texto;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

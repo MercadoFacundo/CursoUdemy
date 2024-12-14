@@ -1,0 +1,22 @@
+/* Operadores aritmeticos
++ = suma
+- = resta
+* = multiplicador
+/ = dividir
+% = dividir y obtener un residuo
+*/
+
+/*operadores de comparacion
+> mayor que
+< menor que
+>= mayor o igual a
+<= menor o igial a
+<> no es igual a
+!= no es igual a
+*/
+
+/*Operadores Logicos
+AND
+OR
+NOT
+*/

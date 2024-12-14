@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento OnChange
+se activa cuando algo cambia donde se aplique el evento
+this hace referencia a este bloque-->
+<input type="text" onchange="convertir(this)">
+
+    <br>
+
+
+    <script>
+
+//creamos la funcion para el onchange
+        function convertir(nombreImput){
+//Cada vez que carguemos un valor en el imput y hagamos click fuera del cuadro
+//va a cnvertirste en mayuscula gracias al toUpperCase()
+            nombreImput.value = nombreImput.value.toUpperCase()
+
+
+
+        }
+
+
+    </script>
+</body>
+</html>

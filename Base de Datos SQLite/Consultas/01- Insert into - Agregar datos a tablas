@@ -1,0 +1,13 @@
+/* Agregar datos a tablas 
+INSERT INTO table (columna1, columna2, columna3, ...)
+VALUES(valor1, valor2, valor3)*/
+
+INSERT INTO tb_medidas(descripcion_me)
+VALUES('litros')
+
+select * from tb_medidas
+
+INSERT INTO tb_categorias(descripcion_ca)
+VALUES('eventos')
+
+select * from tb_categorias

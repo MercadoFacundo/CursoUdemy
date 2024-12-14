@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento adEventListener-->
+
+<input type="text" id="nombre">
+
+    <script>
+//dentro del addeventolistener, se colocan eventos sin el on
+//se puede usar
+        document.getElementById("nombre").addEventListener("focus",cambiar)
+        document.getElementById("nombre").addEventListener("blur",regresar)
+
+        function cambiar(evento){
+//evento. target hace referencia a todo el imput como el this
+            let componente = evento.target   
+
+            componente.style.background="red"        
+        }
+
+        function regresar(evento){
+//evento. target hace referencia a todo el imput como el this
+            let componente = evento.target   
+
+            componente.style.background="blue"        
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Evento OnFocus - Se activa cuando estamos dentro del input 
+el elemento donde se regista el evento
+Evento onBlur - se activa cuando salimos del imput
+del elemento donde se registro el evento
+
+llama a la funcion rojo cuando salimos del imput del elemento y llama la 
+funcion azul cuando ingresamos en el imput del elemento-->
+
+<input type="text" onfocus="azul(this)" onblur="rojo(this)">
+
+    <script>
+        function rojo(titulo){
+            //en este caso nos cambiara el texto
+            //titulo.style.color="red"
+            //si queremos cambiar el fondo usaremos
+            titulo.style.background='red'
+        }
+        function azul(titulo){
+            titulo.style.color="blue"
+        }
+
+    </script>
+</body>
+</html>
