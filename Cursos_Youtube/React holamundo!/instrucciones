@@ -1,0 +1,7 @@
+--para crear react
+
+npm create vite@5.2.3 
+
+--en la carpeta donde se encuentra la app, para ejecutarlo hay que hacer lo siguiente
+
+npm run dev
