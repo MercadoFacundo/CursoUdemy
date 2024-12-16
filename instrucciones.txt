@@ -1,11 +1,13 @@
 --para crear react
 
-npm create vite@5.2.3 
+npm create vite@5.2.3
 
 --nos paramos en la carpeta donde se instalo la app
 
-npm install  //asi se instalaran todos los paquetes faltantes
+npm install //asi se instalaran todos los paquetes faltantes
 
 --en la carpeta donde se encuentra la app, para ejecutarlo hay que hacer lo siguiente
 
 npm run dev
+
+link de estudio: https://www.youtube.com/watch?v=vH1u6Xv6oXw

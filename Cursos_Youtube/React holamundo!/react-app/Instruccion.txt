@@ -1,0 +1,40 @@
+Que hace cada carpeta?
+
+--node_module
+
+Es una carpeta que se crea cuando hacemos npn install y contiene
+todas las dependencias que utilizamos
+
+--public
+
+Contiene todos los recursos estaticos que debiecen ser publicos,
+y que el usuario podria acceder, ya sean logos, imagenes, videos, etc.
+
+--scr
+
+Este contiene todos los archivos del codigo fuente
+dentro del mismo esta el
+
+    --Index.html
+    Es nuestro index principal donde toda nuestra aplicacion en react
+    va a aparecer en nuestro div con el id "Root"
+
+    --App.jsx
+
+    Aca se encuentra todo lo que se muestra en la pagina
+
+    --App.css
+    
+    Aca se encuentran todos los estilos de los componentes
+
+    --Index.css
+
+    Aca se encuentran todos los estilos globales
+
+-instalar axios
+
+npm i axios
+
+-instalar router
+
+npm i react-router-dom
